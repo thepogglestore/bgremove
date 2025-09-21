@@ -1,0 +1,59 @@
+{
+  "name": "bgbye",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@img-comparison-slider/react": "^8.0.2",
+    "@mui/icons-material": "^5.15.21",
+    "@mui/material": "^5.15.21",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "img-comparison-slider": "^8.0.6",
+    "p-limit": "^6.0.0",
+    "react": "^18.3.1",
+    "react-best-gradient-color-picker": "^3.0.8",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-scripts": "5.0.1",
+    "react18-image-magnifier": "^4.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"PORT=9877 react-scripts start\" \"cd server && ./run.sh\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && wrangler pages deploy ./build",
+    "preview": "npm run build && wrangler pages dev ./build",
+    "start-server": "cd server && ./run.sh",
+    "setup-server": "cd server && chmod +x setup.sh && chmod +x run.sh && ./setup.sh",
+    "start-client": "PORT=9877 react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wrangler": "^3.63.1"
+  }
+}

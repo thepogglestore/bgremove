@@ -1,0 +1,81 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Python virtual environment
+venv/
+ENV/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# wrangler files
+.wrangler
+.dev.vars
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm and VSCode settings
+.idea/
+.vscode/
+
+# Video file extensions
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.mpeg
+*.mpg
+*.3gp
+*.3g2
+*.gif
+
+#video-related temporary files
+*.vob
+*.ogv
+*.ogg
+*.gifv
+
+# Machine Learning model files
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.joblib
+*.onnx
+*.tflite
+*.pb
+*.ckpt
+*.weights
+*.pt
+*.pth
+*.torch
+*.bin
+

@@ -1,0 +1,7 @@
+Improve UI:
+
+add dropdown for download types
+- webp/png
+- mov/gif/webm
+
+add download video progressbar
